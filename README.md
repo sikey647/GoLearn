@@ -45,7 +45,7 @@
 * 在 Linux 和 macOS 下，把以下内容添加到 /etc/profile 或者 $HOME/.profile 文件保存即可
 
     ```shell
-    export GOPATH=/Users/flysnow/go
+    export GOPATH=/Users/sikey/WorkSpace/Go/GoPath
     export GOBIN=$GOPATH/bin
     ```
 
