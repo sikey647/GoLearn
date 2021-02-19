@@ -14,10 +14,11 @@
     sudo tar -C /usr/local -xzf go1.15.linux-amd64.tar.gz
     ```
 
-* 把 /usr/local/go/bin 添加到 PATH 环境变量中，即添加到 /etc/profile 或者 $HOME/.profile 文件中，保存后退出即可成功添加环境变量
+* 把 /usr/local/go/bin 添加到 PATH 环境变量中，即添加到 /etc/profile 或者 $HOME/.bash_profile 文件中，保存后退出即可成功添加环境变量
 
     ```shell
     export PATH=$PATH:/usr/local/go/bin
+    source ~/.bash_profile
     ```
 
 #### MacOS
@@ -42,11 +43,12 @@
     * GOPATH：代表 Go 语言项目的工作目录，在 Go Module 模式之前非常重要，现在基本上用来存放使用 go get 命令获取的项目
     * GOBIN：代表 Go 编译生成的程序的安装目录，比如通过 go install 命令，会把生成的 Go 程序安装到 GOBIN 目录下，以供在终端使用
 
-* 在 Linux 和 macOS 下，把以下内容添加到 /etc/profile 或者 $HOME/.profile 文件保存即可
+* 在 Linux 和 macOS 下，把以下内容添加到 /etc/profile 或者 $HOME/.bash_profile 文件保存即可
 
     ```shell
     export GOPATH=/Users/sikey/WorkSpace/Go/GoPath
     export GOBIN=$GOPATH/bin
+    source ~/.bash_profile
     ```
 
 
